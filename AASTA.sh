@@ -2,20 +2,24 @@
 
 # AASTA.sh
 #
-# Kasutamine:  source ./AASTA.sh <aasta>
+# Kasutamine:  source ./AASTA.sh <aasta> <CPV-kood>
 #
-# Skript moodustab Riigihangete registri avaandmete failidest "Sõlmitud lepingud" tervet aastat
-# hõlmava CSV-faili.
+# Skript moodustab Riigihangete registri avaandmete failidest "Sõlmitud lepingud"
+# tervet aastat hõlmava CSV-faili.
 # 
 # CC BY-NC-SA, Priit Parmakson, 2021
 
+# Kontrolli argumentide arvu.
+if [ "$#" -ne 2 ]; then
+    echo " "
+    echo 'Kasutamine:  source ./AASTA.sh <aasta> <CPV kood>'
+    echo " "
+    return
+fi
+
 for ((i = 1; i <=12; i++)); do
-  source ./KUU.sh $i
+  source ./KUU.sh $1 $i $2
 done
 
-cat $1_1.csv $1_2.csv \
-  $1_3.csv $1_4.csv $1_5.csv \
-  $1_6.csv $1_7.csv $1_8.csv \
-  $1_9.csv $1_10.csv $1_11.csv \
-  $1_12.csv > $1.csv
+source ./SIDURDA.sh $1
 

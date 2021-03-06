@@ -1,16 +1,28 @@
 # Avaandmete-POC
 
+Avaandmete-POC on vahend Riigihangete registri (RHR) avaandmete töötlemiseks.
+
 ## Kood
 
-- `LAE_AASTA.sh` laeb Riigihangete registrist argumendina määratud aasta kõigi kuude avaandmete
-failid "Sõlmitud lepingud".
-- `AASTA.sh` moodustab Riigihangete registri avaandmete failidest "Sõlmitud lepingud" tervet aastat hõlmava CSV-faili.
-- `KUU.sh` moodustab Riigihangete registri avaandmete failist "Sõlmitud lepingud" CSV-faili.
+- `LAE_AASTA.sh` laeb Riigihangete registrist argumendina määratud aasta kõigi
+kuude avaandmete failid "Sõlmitud lepingud".
+
+- `KUU.sh` moodustab skriptiga `LAE_AASTA.sh` moodustatud failist CSV-faili.
+
+- `SIDURDA.sh` ühendab skriptiga `KUU.sh` moodustatud CSV-failid üheks, tervet
+aastat hõlmavaks CSV-failiks.
+
+- `AASTA.sh` teeb skriptide `KUU.sh` ja `SIDURDA.sh` töö ühe sammuga.
 
 ## Andmed
 
-- `2020.csv` on ülalnimetatud skriptide töö tulemus 2020. a kohta.
-- [Riigi IT-hanked (CPV 72xx, sõlmitud lepingud), 2020](https://docs.google.com/spreadsheets/d/199FBDvMDKyIWTbPbE8EPhr5sHBfRtZufusevGoyIyxU/edit?usp=sharing)  (Google Docs).
+Avaandmed-POC abil töödeldud andmehulgad:
+
+- [Avaliku sektori ehitushanked 2020](https://docs.google.com/spreadsheets/d/1Ajj3IH5GMpa12wEFf53G62xtkWT0__N8fv3bMXF_O54/edit?usp=sharing) - CPV-kood 45xx,
+sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
+
+- [Riigi IT-teenuste hanked 2020](https://docs.google.com/spreadsheets/d/199FBDvMDKyIWTbPbE8EPhr5sHBfRtZufusevGoyIyxU/edit?usp=sharing) - CPV-kood 72xx,
+sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
 
 ## Allikas
 
