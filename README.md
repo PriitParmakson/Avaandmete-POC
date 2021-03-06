@@ -24,6 +24,10 @@ sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
 - [Riigi IT-teenuste hanked 2020](https://docs.google.com/spreadsheets/d/199FBDvMDKyIWTbPbE8EPhr5sHBfRtZufusevGoyIyxU/edit?usp=sharing) - CPV-kood 72xx,
 sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
 
+Töötluse näide:
+
+![](img/KUVA_01.png)
+
 ## Allikas
 
 - [Teave Riigihangete registri avaandmete kohta](https://riigihanked.riik.ee/rhr-web/#/open-data)
