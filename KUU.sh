@@ -22,13 +22,20 @@ if [ "$#" -ne 3 ]; then
     return
 fi
 
+echo "Töötlen $1 $2 $3..."
+
+# Leia CPV koodi pikkus
+KOODIPIKKUS="${#3}"
+echo "  CPV-koodi pikkus: $KOODIPIKKUS"
+
 cp $1_$2.xml $1_$2_NONS.xml
 # Eemalda nimeruumid. xmlstarlet ei suuda neid töödelda.
 sed -i 's/ns2://g' $1_$2_NONS.xml
 sed -i 's/xmlns.*\s//g' $1_$2_NONS.xml
 
 # Kustuta failist kõik teated, mille kood ei alga $3.
-xmlstarlet ed -d "//TED_ESENDERS[substring(descendant::CPV_CODE/@CODE,1,2)!='$3']" \
+xmlstarlet ed -d \
+  "//TED_ESENDERS[substring(descendant::CPV_CODE/@CODE,1,$KOODIPIKKUS)!='$3']" \
   $1_$2_NONS.xml > $1_$2_72.xml
 
 # Kirjuta CSV-fail.
@@ -47,6 +54,9 @@ rm $1_$2_NONS.xml
 rm $1_$2_72.xml
 
 # Märkmed
+
+# Find Length of String in Bash
+# https://linuxhint.com/length_of_string_bash/
 
 # -o "\"" on vajalik CSV eraldajat (koma) sisaldavate sõnede jutumärkidesse
 # panemiseks.

@@ -16,13 +16,14 @@ aastat hõlmavaks CSV-failiks.
 
 ## Andmed
 
-Avaandmed-POC abil töödeldud andmehulgad:
+Avaandmed-POC abil töödeldud andmehulgad (sõlmitud lepingud; Google Docs tabel;
+juurdepääs: vaatamisõigus):
 
-- [Avaliku sektori ehitushanked 2020](https://docs.google.com/spreadsheets/d/1Ajj3IH5GMpa12wEFf53G62xtkWT0__N8fv3bMXF_O54/edit?usp=sharing) - CPV-kood 45xx,
-sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
+- [Avaliku sektori ehitushanked 2020](https://docs.google.com/spreadsheets/d/1Ajj3IH5GMpa12wEFf53G62xtkWT0__N8fv3bMXF_O54/edit?usp=sharing) - CPV-kood 45xx.
 
-- [Riigi IT-teenuste hanked 2020](https://docs.google.com/spreadsheets/d/199FBDvMDKyIWTbPbE8EPhr5sHBfRtZufusevGoyIyxU/edit?usp=sharing) - CPV-kood 72xx,
-sõlmitud lepingud. Google Docs tabel, juurdepääs: vaatamisõigus.
+- [Avaliku sektori reklaamiteenuste hanked 2020](https://docs.google.com/spreadsheets/d/14HpEADBOvm571V1TVrQMp1bUdui23e9ObggEzR5bJCw/edit?usp=sharing) - CPV-kood 7934.
+
+- [Avaliku sektori IT-teenuste hanked 2020](https://docs.google.com/spreadsheets/d/199FBDvMDKyIWTbPbE8EPhr5sHBfRtZufusevGoyIyxU/edit?usp=sharing) - CPV-kood 72xx.
 
 Töötluse näide:
 
